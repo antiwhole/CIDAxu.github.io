@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="> 第五章 一元函数的导数及其应用
+
+**课标要求**
+
+- 导数概念及其意义：
+①通过实例分析，经历由平均变化率过渡到瞬时变化率的过程，了解导数概念的实际背景，知道导数是关于瞬时变化率的数学表达，体会导数的内涵与思想。">
+<meta property="og:title" content="高中数学（选择性必修二）知识框架">
+<meta property="og:description" content="> 第五章 一元函数的导数及其应用
+
+**课标要求**
+
+- 导数概念及其意义：
+①通过实例分析，经历由平均变化率过渡到瞬时变化率的过程，了解导数概念的实际背景，知道导数是关于瞬时变化率的数学表达，体会导数的内涵与思想。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://antiwhole.github.io/Alicexu.github.io/post/gao-zhong-shu-xue-%EF%BC%88-xuan-ze-xing-bi-xiu-er-%EF%BC%89-zhi-shi-kuang-jia.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>高中数学（选择性必修二）知识框架</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">高中数学（选择性必修二）知识框架</h1>
+<div class="title-right">
+    <a href="https://antiwhole.github.io/Alicexu.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/antiwhole/Alicexu.github.io/issues/6" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><blockquote>
+<p>第五章 一元函数的导数及其应用</p>
+</blockquote>
+<p><strong>课标要求</strong></p>
+<ul>
+<li>导数概念及其意义：<br>
+①通过实例分析，经历由平均变化率过渡到瞬时变化率的过程，了解导数概念的实际背景，知道导数是关于瞬时变化率的数学表达，体会导数的内涵与思想。<br>
+②体会极限思想。<br>
+③通过函数图象直观理解导数的几何意义</li>
+<li>导数运算：<br>
+①能根据导数定义求部分函数的导数。<br>
+②能利用给出的基本初等函数的导数公式和导数的四则运算法则，求简单函数的导数；能求简单的复合函数（限于形如f(ax + b)）的导数。③会使用导数公式表</li>
+<li>导数在研究函数中的应用:<br>
+①结合实例，借助几何直观了解函数的单调性与导数的关系；能利用导数研究函数的单调性；对于多项式函数，能求不超过3次的多项式函数的单调区间。<br>
+②借助函数的图象，了解函数在某点取得极值的必要条件和充分条件；能利用导数求某些函数的极大值、极小值以及给定闭区间上不超过3次的多项式函数的最大值、最小值；体会导数与单调性、极值、最大（小）值的关系</li>
+</ul>
+<p><strong>重点知识</strong></p>
+<p>5.1 导数的概念及其意义。变化率问题、导数的概念、导数的几何意义、导函数等</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7ea6ec1f-3acb-4dbb-9d4e-4ce1a38d5ac3"><img src="https://github.com/user-attachments/assets/7ea6ec1f-3acb-4dbb-9d4e-4ce1a38d5ac3" alt="Image" style="max-width: 100%;"></a></p>
+<p>5.2 导数的运算。基本初等函数的导数公式、导数的四则运算、简单复合函数的导数</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/db88bc38-191b-41c0-adfc-f0561b3aa0d5"><img src="https://github.com/user-attachments/assets/db88bc38-191b-41c0-adfc-f0561b3aa0d5" alt="Image" style="max-width: 100%;"></a></p>
+<p>5.3 导数在研究函数中的应用。函数的单调性、函数的极值</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7daeae3e-244f-40bc-9a08-06a0e63b7170"><img src="https://github.com/user-attachments/assets/7daeae3e-244f-40bc-9a08-06a0e63b7170" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>学法指导</strong></p>
+<ul>
+<li>导数是微积分的核心内容，是现代数学的基本理论，高考中占分也比较高，一定要重视</li>
+<li>导数定量地刻画了函数的局部变化，是研究函数增减、变化快慢、最大值最小值的基本方法，是解决实际问题的基本工具</li>
+<li>理解极限的概念是理解导数定义的关键，还要理解导数的几何意义，记住常用的求导公式，掌握利用导数的零点判断函数单调性和求极值的方法和步骤</li>
+</ul>
+<p><strong>章节小结</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/e10f6fbe-fe14-4454-917e-ccd6f02def82"><img src="https://github.com/user-attachments/assets/e10f6fbe-fe14-4454-917e-ccd6f02def82" alt="Image" style="max-width: 100%;"></a></p>
+<blockquote>
+<p>第六章 计数原理</p>
+</blockquote>
+<p><strong>课标要求</strong></p>
+<p>（1）两个基本计数原理：通过实例，了解分类加法计数原理、分步乘法计数原理及其意义<br>
+（2）排列与组合：通过实例，理解排列、组合的概念；能利用计数原理推导排列数公式、组合数公式<br>
+（3）二项式定理：能用多项式运算法则和计数原理证明二项式定理，会用二项式定理解与二项展开式有关的简单问题</p>
+<p><strong>重点知识</strong></p>
+<p>6.1 分类加法计数原理和分步乘法计数原理。了解两者的共同点与不同点。理解其意义</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/dbeca0f0-88b7-4a07-8973-487c5fb01ddd"><img src="https://github.com/user-attachments/assets/dbeca0f0-88b7-4a07-8973-487c5fb01ddd" alt="Image" style="max-width: 100%;"></a></p>
+<p>6.2 排列与组合。排列的定义、排列数公式；组合的定义，组合数公式以及相关应用</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/35df9ff0-4cae-4bde-89f0-a4eb4e96464e"><img src="https://github.com/user-attachments/assets/35df9ff0-4cae-4bde-89f0-a4eb4e96464e" alt="Image" style="max-width: 100%;"></a></p>
+<p>6.3 二项式定理。二项式定理及二项展开式、二项展开式的系数、二项展开式通项。二项展开式的特点。二项展开式系数的性质</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/81679861-8443-48d5-aea3-3d2378ddefc4"><img src="https://github.com/user-attachments/assets/81679861-8443-48d5-aea3-3d2378ddefc4" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>学法指导</strong></p>
+<p>排列组合是高中数学的基础内容、重点内容，更是高考中的必考内容；它既是学习概率知识的基础，又是学好概率知识的关键<br>
+充分理解分类加法计数原理与分步乘法计数原理的意义。单独理解这两个原理时没有什么难度，如果解决排列组合复杂问题运算时，能理性地将其分解为分类和分步计算就不会太难了<br>
+切实加强实战训练，记住常用计算公式，不断总结题目类型和解题规律，熟能生巧</p>
+<p><strong>章节小结</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/24d882f7-d25b-4c8c-b66a-4a806e0b6dac"><img src="https://github.com/user-attachments/assets/24d882f7-d25b-4c8c-b66a-4a806e0b6dac" alt="Image" style="max-width: 100%;"></a></p>
+<p>第七章 随机变量及其分布</p>
+<p><strong>课标要求</strong></p>
+<p>（1）随机事件的条件概率：①结合古典概型，了解条件概率，能计算简单随机事件的条件概率。②结合古典概型，了解条件概率与独立性的关系。③结合古典概型，会利用乘法公式计算概率。④结合古典概型，会利用全概率公式计算概率。了解贝叶斯公式<br>
+（2）离散型随机变量及其分布列：①通过具体实例，了解离散型随机变量的概念，理解离散型随机变量分布列及其数字特征（均值、方差）。②通过具体实例，了解伯努利试验，掌握二项分布及其数字特征，并能解决简单的实际问题。③通过具体实例，了解超几何分布及其均值，并能解决简单的实际问题<br>
+（3）正态分布：①通过误差模型，了解服从正态分布的随机变量。通过具体实例，借助频率直方图的几何直观，了解正态分布的特征。②了解正态分布的均值、方差及其含义</p>
+<p><strong>重点知识</strong></p>
+<p>7.1 条件概率与全概率公式，条件概率及其性质，全概率公式、贝叶斯公式</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7daced4f-f5d4-4d2b-a60e-e6f5f683df0b"><img src="https://github.com/user-attachments/assets/7daced4f-f5d4-4d2b-a60e-e6f5f683df0b" alt="Image" style="max-width: 100%;"></a></p>
+<p>7.2 离散型随机变量及其分布，离散型随机变量，离散型随机变量的分布，离散型随机变量的性质</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/a9cd7d99-557a-470e-b9ca-866c7a3b617c"><img src="https://github.com/user-attachments/assets/a9cd7d99-557a-470e-b9ca-866c7a3b617c" alt="Image" style="max-width: 100%;"></a></p>
+<p>7.3 离散型随机变量的数字特征，离散型随机变量的均值及其性质，离散型随机变量的方差及其性质</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/6642c456-8c4e-49b3-8f00-ed51efc7e9ad"><img src="https://github.com/user-attachments/assets/6642c456-8c4e-49b3-8f00-ed51efc7e9ad" alt="Image" style="max-width: 100%;"></a></p>
+<p>7.4 二项分布与超几何分布，$n$重伯努利试验，二项分布及其性质，超几何分布及其性质</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/d4d6f730-520b-44de-aa03-352df996775c"><img src="https://github.com/user-attachments/assets/d4d6f730-520b-44de-aa03-352df996775c" alt="Image" style="max-width: 100%;"></a></p>
+<p>7.5 正态分布，连续型随机变量，正态分布的概念，正态曲线的特点，正态曲线图象的变化，3σ原则</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/689b2c17-2ea2-428d-b315-7966f4770288"><img src="https://github.com/user-attachments/assets/689b2c17-2ea2-428d-b315-7966f4770288" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>学法指导</strong></p>
+<ul>
+<li>结合实例，理解概念和模型构建的过程和意义。概率涉及很多新概念和模型，同学们要将这些新的概念进行比较和分析，并与已有的知识和经验建立起广泛的联系，加深对概念和模型的理解和记忆</li>
+<li>构建知识网络，把握各知识间的联系与区别。如离散型随机变量与连续型随机变量是相对应的，以及均值与方差、二项分布与超几何分布等概念都是成对出现的，所有概率的计算都是以古典概型为基础的，只有加强联系和比较，构建起知识的网络，才能更好地理解和应用</li>
+<li>概率问题求解的关键是寻找它的模型。通过观察、分析、归纳、判断等思维过程，就能找到，对同一类型的问题进行归纳总结，熟能生巧</li>
+</ul>
+<p><strong>章节小结</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/cc687081-2c83-4b60-9a3d-73fa55b3e1ba"><img src="https://github.com/user-attachments/assets/cc687081-2c83-4b60-9a3d-73fa55b3e1ba" alt="Image" style="max-width: 100%;"></a></p>
+<blockquote>
+<p>第八章 成对数据的统计分析</p>
+</blockquote>
+<p><strong>课标要求</strong></p>
+<ul>
+<li>成对数据的统计相关性：<br>
+①结合实例，了解样本相关系数的统计含义，了解样本相关系数与标准化数据向量夹角的关系。<br>
+②结合实例，会通过相关系数比较多组成对数据的相关性</li>
+<li>一元线性回归模型：<br>
+①结合具体实例，了解一元线性回归模型的含义，了解模型参数的统计意义，了解最小二乘原理，掌握一元线性回归模型参数的最小二乘估计方法，会使用相关的统计软件。<br>
+②针对实际问题，会用一元线性回归模型进行预测</li>
+<li>2X2列联表：①通过实例，理解2X2列联表的统计意义。②通过实例，了解2X2列联表独立性检验及其应用</li>
+</ul>
+<p><strong>重点知识</strong></p>
+<p>8.1 成对数据的统计相关性。变量的相关关系，正相关与负相关，线性相关与非线性相关，样本相关系数，样本相关系数的性质</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/4de02401-82dd-414b-9343-fc0a7ffe7014"><img width="2000" height="1331" alt="Image" src="https://github.com/user-attachments/assets/4de02401-82dd-414b-9343-fc0a7ffe7014" style="max-width: 100%; height: auto; max-height: 1331px;"></a></p>
+<p>8.2 一元线性回归模型参数的最小二乘估计。一元线性回归模型，最小二乘估计，残差与残差分析，模型拟合效果的比较</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/265ef4f9-82a7-4f14-a6dd-0baef8818e19"><img src="https://github.com/user-attachments/assets/265ef4f9-82a7-4f14-a6dd-0baef8818e19" alt="Image" style="max-width: 100%;"></a></p>
+<p>8.3 列联表与独立性检验。分类变量与列联表，零假设，统计量的计算公式，独立性的判断方法</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/ff9e2f82-65b3-4c36-9623-e45c111765dc"><img src="https://github.com/user-attachments/assets/ff9e2f82-65b3-4c36-9623-e45c111765dc" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>学法指导</strong></p>
+<p>这是高中数学选择性必修的最后一章，有一些统计的概念是我们以前没有接触过的，所以，建议同学们从深入理解概念入手，加强对本章内容的学习<br>
+尽快在大脑中建立起概率统计的知识网络，将以前学习过的相关内容系统地复习和巩固，有助于我们加深对本章知识内容的理解<br>
+联系实际问题学习。本章每一个新知识点的提出，都是与解决实际问题联系在一起的，我们虽然对新概念感到陌生，但对实际问题都能理解，这是我们理解和记忆新知识的一个重要途径</p>
+<p><strong>章节小结</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/097eaa5f-c728-4a90-b8a8-6b4044d51392"><img src="https://github.com/user-attachments/assets/097eaa5f-c728-4a90-b8a8-6b4044d51392" alt="Image" style="max-width: 100%;"></a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://antiwhole.github.io/Alicexu.github.io">Blog Title</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","antiwhole/Alicexu.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
